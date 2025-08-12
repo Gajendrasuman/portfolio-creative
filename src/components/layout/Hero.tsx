@@ -32,7 +32,7 @@ export default function Hero() {
           />
           <Image
             loader={imgLoader}
-            src="/images/image.png"
+            src="/images/Image.png"
             alt="Hero"
             width={469}
             height={386}
