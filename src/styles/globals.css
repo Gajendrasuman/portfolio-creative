@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #2c3036;
+  --color-secondary: #282C33;
+  --color-nav: #999;
+  --color-text: #ABB2BF;
+  --color-primary: #C778DD;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/fira-code.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.active{
+  color: var(--color-nav);
+}
+
+button{
+  cursor: pointer;
+}
+
+*{
+  font-family: 'Fira Code', monospace;
+  scroll-behavior: smooth;
+}
