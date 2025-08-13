@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/navbar";
 import { LuGithub, LuLinkedin, LuTwitter, LuMail } from "react-icons/lu";
 import Footer from "@/components/layout/footer";
 import DotBox from "@/components/ui/dot-box";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Gajender",
@@ -25,16 +26,24 @@ export default function RootLayout({
           <hr className="w-0.5 h-40 bg-text mx-auto float-vertical" />
           <div className="mx-auto w-fit flex flex-col gap-4 float-vertical">
             <div className="size-7 bg-text rounded-full flex items-end justify-center cursor-pointer hover:scale-110 transition-transform">
-              <LuGithub size={22} fill="black" />
+              <Link href="https://github.com/Gajendrasuman" target="_blank" rel="noopener noreferrer">
+                <LuGithub size={22} fill="black" />
+              </Link>
             </div>
             <div className="size-7 bg-text rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
-              <LuLinkedin size={20} fill="black" />
+              <Link href="https://linkedin.com/in/gajender868" target="_blank" rel="noopener noreferrer">
+                <LuLinkedin size={20} fill="black" />
+              </Link>
             </div>
             <div className="size-7 bg-text rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
-              <LuTwitter size={20} fill="black" />
+              <Link href="https://x.com/Averrraagggeeee" target="_blank" rel="noopener noreferrer">
+                <LuTwitter size={20} fill="black" />
+              </Link>
             </div>
             <div className="size-7 bg-text rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
-              <LuMail size={20} />
+              <Link href="mailto:gajendrasuman868@gmail.com?subject=Inquiry&body=Hi%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer">
+                <LuMail size={20} />
+              </Link>
             </div>
           </div>
           <DotBox className="relative w-fit top-1/5 left-1/9 float-vertical" />
