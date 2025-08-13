@@ -4,7 +4,7 @@ import imgLoader from "@/lib/imgLoader";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="border border-text max-w-96 mx-auto h-fit">
+    <div className="border border-text sm:max-w-96 max-w-[90%] hover:scale-105 transition-transform duration-300 mx-auto h-fit">
       <div className="">
         <Image
           loader={imgLoader}

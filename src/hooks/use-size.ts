@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 export default function useSize() {
     const [size, setSize] = useState(0);
     useEffect(() => {
+        setSize(window.innerWidth);
         const handleResize = () => {
             setSize(window.innerWidth);
         };

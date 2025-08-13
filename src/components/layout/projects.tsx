@@ -65,7 +65,7 @@ export const projects: Project[] = [
 
 export default function Projects(){
     return (
-        <section id="projects" className="mt-24">
+        <section id="projects" className="mt-32">
             <Heading title="Projects" href="/projects"/>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-16">
                 {projects.slice(0, 3).map((project, index) => (

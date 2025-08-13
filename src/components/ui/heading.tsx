@@ -11,7 +11,7 @@ export default function Heading({
     <div className="flex justify-between items-center">
       <h1 className="text-[32px] w-fit relative text-white font-semibold lowercase">
         <span className="text-primary">#</span>{title}{" "}
-        <span className="absolute top-1/2 -translate-y-1/2 w-[250%] ml-4 h-[1] bg-primary"></span>
+        <span className="absolute top-1/2 -translate-y-1/2 w-2/3 md:w-[150%] lg:w-[250%] ml-2 md:ml-4 h-[1] bg-primary"></span>
       </h1>
       {href && (
         <Link href={href}>

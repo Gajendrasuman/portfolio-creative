@@ -28,3 +28,40 @@ button{
   font-family: 'Fira Code', monospace;
   scroll-behavior: smooth;
 }
+
+
+.nav-active{
+  left: 0;
+  animation: nav 0.5s ease-in-out;
+}
+
+@keyframes nav {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.float-vertical{
+  --d: 2s;
+  animation: float-vertical var(--d) ease-in-out infinite;
+}
+
+@keyframes float-vertical{
+  50%{
+    transform: translateY(-10px);
+  }
+}
+
+.float-horizontal{
+  --d: 2s;
+  animation: float-horizontal var(--d) ease-in-out infinite;
+}
+
+@keyframes float-horizontal{
+  50%{
+    transform: translateX(-10px);
+  }
+}
