@@ -12,23 +12,23 @@ import { GiSplitCross } from "react-icons/gi";
 const nav = [
   {
     name: "home",
-    href: "#hero",
+    href: "/",
   },
   {
     name: "works",
-    href: "#projects",
+    href: "/works",
   },
   {
     name: "about-me",
-    href: "#about",
+    href: "/about",
   },
   {
     name: "contacts",
-    href: "#contacts",
+    href: "/#contacts",
   },
   {
     name: "skills",
-    href: "#skills",
+    href: "/about#skills",
   },
 ];
 

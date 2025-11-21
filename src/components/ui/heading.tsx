@@ -9,10 +9,10 @@ export default function Heading({
 }) {
   return (
     <div className="flex justify-between items-center">
-      <h1 className="text-[32px] w-fit relative text-white font-semibold lowercase">
+      <h2 className="text-[32px] w-fit relative text-white font-semibold lowercase">
         <span className="text-primary">#</span>{title}{" "}
         <span className="absolute top-1/2 -translate-y-1/2 w-2/3 md:w-[150%] lg:w-[250%] ml-2 md:ml-4 h-[1] bg-primary"></span>
-      </h1>
+      </h2>
       {href && (
         <Link href={href}>
           <button className="text-white group font-medium hover:text-nav cursor-pointer transition-colors ">

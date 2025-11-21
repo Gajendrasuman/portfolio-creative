@@ -1,6 +1,6 @@
 "use client"
-import Heading from "../ui/heading";
-import DotBox from "../ui/dot-box";
+import Heading from "@/components/ui/heading";
+import DotBox from "@/components/ui/dot-box";
 import Image from "next/image";
 import imgLoader from "@/lib/imgLoader";
 import useSize from "@/hooks/use-size";

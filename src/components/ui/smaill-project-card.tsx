@@ -1,19 +1,15 @@
-import Image from "next/image";
-import imgLoader from "@/lib/imgLoader";
-import { Project } from "@/data/projects";
+export interface ProjectProps {
+    name: string;
+    href: string;
+    tech: string[];
+    desc: string;
+}
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function SmallProjectCard({ project }: { project: ProjectProps }) {
   return (
     <div className="border border-text sm:max-w-96 max-w-[90%] hover:scale-105 transition-transform duration-300 mx-auto h-fit">
       <div className="">
-        <Image
-          loader={imgLoader}
-          src={project.img}
-          alt={project.name}
-          width={240}
-          height={200}
-          className="size-full object-cover aspect-3/2 brightness-85"
-        />
+        
       </div>
       <h3 className="text-text p-2 border-y border-text capitalize">
         {project.tech.join(" ")}
